@@ -1,24 +1,22 @@
-import React from "react";
+import React from 'react';
 
-export function useResizeObserver(
-	elementRef: React.RefObject<Element>,
-): ResizeObserverEntry | undefined {
-	const [entry, setEntry] = React.useState<ResizeObserverEntry>();
+export function useResizeObserver(elementRef: React.RefObject<Element>): ResizeObserverEntry | undefined {
+  const [entry, setEntry] = React.useState<ResizeObserverEntry>();
 
-	React.useEffect(() => {
-		const node = elementRef?.current;
-		if (!node) return;
+  React.useEffect(() => {
+    const node = elementRef?.current;
+    if (!node) return;
 
-		const updateEntry = ([entry]: ResizeObserverEntry[]): void => {
-			setEntry(entry);
-		};
+    const updateEntry = ([entry]: ResizeObserverEntry[]): void => {
+      setEntry(entry);
+    };
 
-		const observer = new ResizeObserver(updateEntry);
+    const observer = new ResizeObserver(updateEntry);
 
-		observer.observe(node);
+    observer.observe(node);
 
-		return () => observer.disconnect();
-	}, [elementRef]);
+    return () => observer.disconnect();
+  }, [elementRef]);
 
-	return entry;
+  return entry;
 }
