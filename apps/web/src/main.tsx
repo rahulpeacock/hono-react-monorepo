@@ -1,4 +1,4 @@
-// import '@lidoku/ui/globals.css';
+import '@kittyo/ui/globals.css';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
