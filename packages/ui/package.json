@@ -12,7 +12,9 @@
 	},
 	"exports": {
 		"./button": "./src/components/button.tsx",
-		"./utils": "./src/utils/index.ts",
+		"./hooks": "./src/hooks/index.ts",
+		"./cn": "./src/utils/cn.ts",
+		"./truncate": "./src/utils/truncate.ts",
 		"./globals.css": "./src/globals.css",
 		"./postcss": "./postcss.config.js",
 		"./tailwind.config": "./tailwind.config.ts"
