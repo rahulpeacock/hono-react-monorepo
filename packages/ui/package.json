@@ -5,10 +5,10 @@
 	"sideEffects": false,
 	"files": ["tailwind.config.ts", "postcss.config.js", "globals.css"],
 	"scripts": {
-		"clean": "rm -rf node_modules",
 		"lint": "biome check .",
 		"format": "biome --write .",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"clean": "rm -rf node_modules"
 	},
 	"exports": {
 		"./button": "./src/components/button.tsx",
