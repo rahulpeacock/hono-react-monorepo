@@ -1,5 +1,5 @@
 {
-	"name": "octobot",
+	"name": "kittyo",
 	"version": "1.0.0",
 	"scripts": {
 		"dev": "pnpm run -r --parallel --aggregate-output dev",
