@@ -72,6 +72,22 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(typescript@5.7.2)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.7)(tsx@4.19.2)(yaml@2.6.1))
 
+  packages/api-client:
+    dependencies:
+      hono:
+        specifier: ^4.6.14
+        version: 4.6.14
+    devDependencies:
+      '@biomejs/biome':
+        specifier: ^1.9.4
+        version: 1.9.4
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.10.2
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
+
   packages/ui:
     dependencies:
       '@radix-ui/react-slot':
@@ -1015,6 +1031,10 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
+
+  hono@4.6.14:
+    resolution: {integrity: sha512-j4VkyUp2xazGJ8eCCLN1Vm/bxdvm/j5ZuU9AIjLu9vapn2M44p9L3Ktr9Vnb2RN2QtcR/wVjZVMlT5k7GJQgPw==}
+    engines: {node: '>=16.9.0'}
 
   is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
@@ -2219,6 +2239,8 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  hono@4.6.14: {}
 
   is-binary-path@2.1.0:
     dependencies:
