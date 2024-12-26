@@ -1,4 +1,4 @@
-import { createRouter } from '@/lib/create-app';
+import { createRouter } from '@/api/lib/create-router';
 import { createRoute } from '@hono/zod-openapi';
 import { jsonContent } from 'stoker/openapi/helpers';
 import { z } from 'zod';

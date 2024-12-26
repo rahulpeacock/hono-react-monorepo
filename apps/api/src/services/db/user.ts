@@ -1,5 +1,5 @@
-import { db } from '@/lib/drizzle';
-import { courseTable, enrolledCourseTable } from '@/schemas/db';
+import { db } from '@/api/lib/drizzle';
+import { courseTable, enrolledCourseTable } from '@/api/schemas/db';
 import { and, eq } from 'drizzle-orm';
 
 // Created Courses

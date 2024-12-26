@@ -1,5 +1,5 @@
-import { db } from '@/lib/drizzle';
-import { type Session, type User, sessionTable, userTable } from '@/schemas/db';
+import { db } from '@/api/lib/drizzle';
+import { type Session, type User, sessionTable, userTable } from '@/api/schemas/db';
 import { sha256 } from '@oslojs/crypto/sha2';
 import { encodeBase32LowerCaseNoPadding, encodeHexLowerCase } from '@oslojs/encoding';
 import { eq } from 'drizzle-orm';

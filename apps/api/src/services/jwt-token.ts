@@ -1,5 +1,5 @@
-import { env } from '@/lib/env';
-import type { User } from '@/schemas/db';
+import { env } from '@/api/lib/env';
+import type { User } from '@/api/schemas/db';
 import { sign } from 'hono/jwt';
 import type { JWTPayload } from 'hono/utils/jwt/types';
 

@@ -1,5 +1,5 @@
-import { db } from '@/lib/drizzle';
-import { chapterTable } from '@/schemas/db';
+import { db } from '@/api/lib/drizzle';
+import { chapterTable } from '@/api/schemas/db';
 import { and, desc, eq } from 'drizzle-orm';
 import { createInsertSchema } from 'drizzle-zod';
 import { z } from 'zod';

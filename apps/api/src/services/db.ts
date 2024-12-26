@@ -1,7 +1,7 @@
-import { db } from '@/lib/drizzle';
-import type { ProviderType } from '@/lib/types';
-import { accountTable, userTable, verificationTokenTable } from '@/schemas/db';
-import type { NewAccount, NewUser } from '@/schemas/db';
+import { db } from '@/api/lib/drizzle';
+import type { ProviderType } from '@/api/lib/types';
+import { accountTable, userTable, verificationTokenTable } from '@/api/schemas/db';
+import type { NewAccount, NewUser } from '@/api/schemas/db';
 import { and, count, eq } from 'drizzle-orm';
 
 /**

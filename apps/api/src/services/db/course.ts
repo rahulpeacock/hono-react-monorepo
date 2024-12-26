@@ -1,5 +1,5 @@
-import { db } from '@/lib/drizzle';
-import { courseTable } from '@/schemas/db';
+import { db } from '@/api/lib/drizzle';
+import { courseTable } from '@/api/schemas/db';
 import { and, eq } from 'drizzle-orm';
 import { createInsertSchema } from 'drizzle-zod';
 import type { z } from 'zod';

@@ -1,5 +1,5 @@
-import type { AuthenticatedAppBindings } from '@/lib/types';
-import { getCurrentSession } from '@/services/session';
+import type { AuthenticatedAppBindings } from '@/api/lib/types';
+import { getCurrentSession } from '@/api/services/session';
 import { createMiddleware } from 'hono/factory';
 import * as HttpStatusCodes from 'stoker/http-status-codes';
 import * as HttpStatusPhrases from 'stoker/http-status-phrases';

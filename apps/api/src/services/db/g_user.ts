@@ -1,5 +1,5 @@
-import { db } from '@/lib/drizzle';
-import { gConnectionTable, gUserTable } from '@/schemas/db';
+import { db } from '@/api/lib/drizzle';
+import { gConnectionTable, gUserTable } from '@/api/schemas/db';
 import { and, eq, isNull } from 'drizzle-orm';
 
 export async function updateGUserWithId(userId: number) {

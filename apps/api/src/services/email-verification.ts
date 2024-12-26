@@ -1,4 +1,4 @@
-import { db } from '@/lib/drizzle';
+import { db } from '@/api/lib/drizzle';
 import { encodeBase32 } from '@oslojs/encoding';
 import { and, eq } from 'drizzle-orm';
 import type { Context } from 'hono';
