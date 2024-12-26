@@ -17,8 +17,8 @@ importers:
         specifier: ^1.13.7
         version: 1.13.7(hono@4.6.14)
       '@hono/zod-openapi':
-        specifier: ^0.17.1
-        version: 0.17.1(hono@4.6.14)(zod@3.24.1)
+        specifier: ^0.18.3
+        version: 0.18.3(hono@4.6.14)(zod@3.24.1)
       '@hono/zod-validator':
         specifier: ^0.4.2
         version: 0.4.2(hono@4.6.14)(zod@3.24.1)
@@ -41,17 +41,17 @@ importers:
         specifier: ^16.4.7
         version: 16.4.7
       drizzle-orm:
-        specifier: ^0.36.4
-        version: 0.36.4(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0)
+        specifier: ^0.38.3
+        version: 0.38.3(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0)
       drizzle-zod:
-        specifier: ^0.5.1
-        version: 0.5.1(drizzle-orm@0.36.4(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0))(zod@3.24.1)
+        specifier: ^0.6.1
+        version: 0.6.1(drizzle-orm@0.38.3(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0))(zod@3.24.1)
       hono:
         specifier: ^4.6.14
         version: 4.6.14
       hono-pino:
-        specifier: ^0.6.0
-        version: 0.6.0(hono@4.6.14)(pino@9.6.0)
+        specifier: ^0.7.0
+        version: 0.7.0(hono@4.6.14)(pino@9.6.0)
       pino:
         specifier: ^9.6.0
         version: 9.6.0
@@ -65,11 +65,11 @@ importers:
         specifier: ^0.1.7
         version: 0.1.7
       resend:
-        specifier: 4.0.1-alpha.0
-        version: 4.0.1-alpha.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: 4.0.1
+        version: 4.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       stoker:
         specifier: ^1.4.2
-        version: 1.4.2(@asteasolutions/zod-to-openapi@7.3.0(zod@3.24.1))(@hono/zod-openapi@0.17.1(hono@4.6.14)(zod@3.24.1))(hono@4.6.14)(openapi3-ts@4.4.0)
+        version: 1.4.2(@asteasolutions/zod-to-openapi@7.3.0(zod@3.24.1))(@hono/zod-openapi@0.18.3(hono@4.6.14)(zod@3.24.1))(hono@4.6.14)(openapi3-ts@4.4.0)
       zod:
         specifier: ^3.24.1
         version: 3.24.1
@@ -81,8 +81,8 @@ importers:
         specifier: ^22.10.2
         version: 22.10.2
       drizzle-kit:
-        specifier: ^0.28.1
-        version: 0.28.1
+        specifier: ^0.30.1
+        version: 0.30.1
       tsc-alias:
         specifier: ^1.8.10
         version: 1.8.10
@@ -965,18 +965,12 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/zod-openapi@0.17.1':
-    resolution: {integrity: sha512-5atEdv7bf92mhxuBVR8LHM4WfaB1jchW+p/f4P/asgWDDmeHcwM8rsBhbbk622MXbUTuAwpsyrJ7u3qnXbjCsQ==}
+  '@hono/zod-openapi@0.18.3':
+    resolution: {integrity: sha512-bNlRDODnp7P9Fs13ZPajEOt13G0XwXKfKRHMEFCphQsFiD1Y+twzHaglpNAhNcflzR1DQwHY92ZS06b4LTPbIQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       hono: '>=4.3.6'
       zod: 3.*
-
-  '@hono/zod-validator@0.3.0':
-    resolution: {integrity: sha512-7XcTk3yYyk6ldrO/VuqsroE7stvDZxHJQcpATRAyha8rUxJNBPV3+6waDrARfgEqxOVlzIadm3/6sE/dPseXgQ==}
-    peerDependencies:
-      hono: '>=3.9.0'
-      zod: ^3.19.1
 
   '@hono/zod-validator@0.4.2':
     resolution: {integrity: sha512-1rrlBg+EpDPhzOV4hT9pxr5+xDVmKuz6YJl+la7VCwK6ass5ldyKm5fD+umJdV2zhHD6jROoCCv8NbTwyfhT0g==}
@@ -1550,15 +1544,15 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
-  drizzle-kit@0.28.1:
-    resolution: {integrity: sha512-JimOV+ystXTWMgZkLHYHf2w3oS28hxiH1FR0dkmJLc7GHzdGJoJAQtQS5DRppnabsRZwE2U1F6CuezVBgmsBBQ==}
+  drizzle-kit@0.30.1:
+    resolution: {integrity: sha512-HmA/NeewvHywhJ2ENXD3KvOuM/+K2dGLJfxVfIHsGwaqKICJnS+Ke2L6UcSrSrtMJLJaT0Im1Qv4TFXfaZShyw==}
     hasBin: true
 
-  drizzle-orm@0.36.4:
-    resolution: {integrity: sha512-1OZY3PXD7BR00Gl61UUOFihslDldfH4NFRH2MbP54Yxi0G/PKn4HfO65JYZ7c16DeP3SpM3Aw+VXVG9j6CRSXA==}
+  drizzle-orm@0.38.3:
+    resolution: {integrity: sha512-w41Y+PquMpSff/QDRGdItG0/aWca+/J3Sda9PPGkTxBtjWQvgU1jxlFBXdjog5tYvTu58uvi3PwR1NuCx0KeZg==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
-      '@cloudflare/workers-types': '>=3'
+      '@cloudflare/workers-types': '>=4'
       '@electric-sql/pglite': '>=0.2.0'
       '@libsql/client': '>=0.10.0'
       '@libsql/client-wasm': '>=0.10.0'
@@ -1646,11 +1640,11 @@ packages:
       sqlite3:
         optional: true
 
-  drizzle-zod@0.5.1:
-    resolution: {integrity: sha512-C/8bvzUH/zSnVfwdSibOgFjLhtDtbKYmkbPbUCq46QZyZCH6kODIMSOgZ8R7rVjoI+tCj3k06MRJMDqsIeoS4A==}
+  drizzle-zod@0.6.1:
+    resolution: {integrity: sha512-huEbUgnsuR8tupnmLiyB2F1I2H9dswI3GfM36IbIqx9i0YUeYjRsDpJVyFVeziUvI1ogT9JHRL2Q03cC4QmvxA==}
     peerDependencies:
-      drizzle-orm: '>=0.23.13'
-      zod: '*'
+      drizzle-orm: '>=0.36.0'
+      zod: '>=3.0.0'
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -1790,8 +1784,8 @@ packages:
   help-me@5.0.0:
     resolution: {integrity: sha512-7xgomUX6ADmcYzFik0HzAxh/73YlKR9bmFzf51CZwR+b6YtzU2m0u49hQCqV6SvlqIqsaxovfwdvbnsw3b/zpg==}
 
-  hono-pino@0.6.0:
-    resolution: {integrity: sha512-tcORp53zLEpKUnoU2bZgD1Kn+NKrIZk6w1q8HYognSfIaNyEc7oGx63wrJVaM+pINPlAkZOQtRy6hmGBWqdIag==}
+  hono-pino@0.7.0:
+    resolution: {integrity: sha512-A3LnJ3HBJ10Pmj/axLz77PnVq4STXW73C+7jWPotOj1mSdpNsdIH5b/QZeCZ+tA7mBU74LKj3zUynnBKOSFnlA==}
     engines: {node: '>=18'}
     peerDependencies:
       hono: '>=4.0.0'
@@ -2165,8 +2159,8 @@ packages:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
 
-  resend@4.0.1-alpha.0:
-    resolution: {integrity: sha512-qtyGk72ZJ3b3ifmz34l/z/X9EpKuqgjTc76/wihMR8I71IdhDIpIPsx/CgKlkA9oLesc8mryW+zulGr8RtEkJQ==}
+  resend@4.0.1:
+    resolution: {integrity: sha512-EkCRfzKw9JX7N75L+0BC8oXohDBLhlhl4w7AgrkEW2TAsOMBsVcbQHPe8cRWP6Ea7KDhD158TsNjbCBcohed5A==}
     engines: {node: '>=18'}
 
   resolve-pkg-maps@1.0.0:
@@ -2932,15 +2926,10 @@ snapshots:
     dependencies:
       hono: 4.6.14
 
-  '@hono/zod-openapi@0.17.1(hono@4.6.14)(zod@3.24.1)':
+  '@hono/zod-openapi@0.18.3(hono@4.6.14)(zod@3.24.1)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 7.3.0(zod@3.24.1)
-      '@hono/zod-validator': 0.3.0(hono@4.6.14)(zod@3.24.1)
-      hono: 4.6.14
-      zod: 3.24.1
-
-  '@hono/zod-validator@0.3.0(hono@4.6.14)(zod@3.24.1)':
-    dependencies:
+      '@hono/zod-validator': 0.4.2(hono@4.6.14)(zod@3.24.1)
       hono: 4.6.14
       zod: 3.24.1
 
@@ -3466,7 +3455,7 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  drizzle-kit@0.28.1:
+  drizzle-kit@0.30.1:
     dependencies:
       '@drizzle-team/brocli': 0.10.2
       '@esbuild-kit/esm-loader': 2.6.5
@@ -3475,7 +3464,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.36.4(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0):
+  drizzle-orm@0.38.3(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0):
     optionalDependencies:
       '@electric-sql/pglite': 0.2.15
       '@neondatabase/serverless': 0.10.4
@@ -3484,9 +3473,9 @@ snapshots:
       postgres: 3.4.5
       react: 19.0.0
 
-  drizzle-zod@0.5.1(drizzle-orm@0.36.4(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0))(zod@3.24.1):
+  drizzle-zod@0.6.1(drizzle-orm@0.38.3(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0))(zod@3.24.1):
     dependencies:
-      drizzle-orm: 0.36.4(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0)
+      drizzle-orm: 0.38.3(@electric-sql/pglite@0.2.15)(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.2)(postgres@3.4.5)(react@19.0.0)
       zod: 3.24.1
 
   eastasianwidth@0.2.0: {}
@@ -3708,7 +3697,7 @@ snapshots:
 
   help-me@5.0.0: {}
 
-  hono-pino@0.6.0(hono@4.6.14)(pino@9.6.0):
+  hono-pino@0.7.0(hono@4.6.14)(pino@9.6.0):
     dependencies:
       defu: 6.1.4
       hono: 4.6.14
@@ -4033,7 +4022,7 @@ snapshots:
 
   real-require@0.2.0: {}
 
-  resend@4.0.1-alpha.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  resend@4.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@react-email/render': 1.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
     transitivePeerDependencies:
@@ -4118,13 +4107,13 @@ snapshots:
 
   split2@4.2.0: {}
 
-  stoker@1.4.2(@asteasolutions/zod-to-openapi@7.3.0(zod@3.24.1))(@hono/zod-openapi@0.17.1(hono@4.6.14)(zod@3.24.1))(hono@4.6.14)(openapi3-ts@4.4.0):
+  stoker@1.4.2(@asteasolutions/zod-to-openapi@7.3.0(zod@3.24.1))(@hono/zod-openapi@0.18.3(hono@4.6.14)(zod@3.24.1))(hono@4.6.14)(openapi3-ts@4.4.0):
     dependencies:
       '@asteasolutions/zod-to-openapi': 7.3.0(zod@3.24.1)
       hono: 4.6.14
       openapi3-ts: 4.4.0
     optionalDependencies:
-      '@hono/zod-openapi': 0.17.1(hono@4.6.14)(zod@3.24.1)
+      '@hono/zod-openapi': 0.18.3(hono@4.6.14)(zod@3.24.1)
 
   string-width@4.2.3:
     dependencies:
