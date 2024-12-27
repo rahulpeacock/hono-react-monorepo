@@ -1,5 +1,5 @@
 {
-  "name": "@lidoku/server",
+  "name": "@kittyo/api",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
