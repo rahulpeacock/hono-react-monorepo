@@ -1,3 +1,4 @@
+import { foo } from '@/api/middlewares/foo';
 import { createRoute, z } from '@hono/zod-openapi';
 import { createMiddleware } from 'hono/factory';
 import * as HttpStatusCodes from 'stoker/http-status-codes';
@@ -8,13 +9,7 @@ export const createTasks = createRoute({
   path: '/tasks',
   tags: ['Tasks'],
   middleware: [
-    createMiddleware<{
-      Variables: { foo: string };
-    }>((c, next) => {
-      console.log('foo middleware');
-      c.set('foo', 'abc');
-      return next();
-    }),
+    foo,
     createMiddleware<{
       Variables: { bar: number };
     }>((c, next) => {

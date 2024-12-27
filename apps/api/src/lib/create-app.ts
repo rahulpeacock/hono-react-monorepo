@@ -9,12 +9,11 @@ export default function createApp() {
   //   if (c.req.path.startsWith(BASE_PATH)) {
   //     return next();
   //   }
-
   //   // SPA redirect to /index.html
   //   return serveStatic({ path: './frontend/dist/index.html' })(c, next);
   // });
 
-  //   app.get('*', serveStatic({ root: './frontend/dist' }));
+  // app.get('*', serveStatic({ root: './frontend/dist' }));
   // app.get('*', serveStatic({ path: './frontend/dist/index.html' }));
 
   app.use(serveEmojiFavicon('🍀'));
