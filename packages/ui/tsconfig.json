@@ -1,17 +1,21 @@
 {
-	"extends": "../../tsconfig.json",
-	"compilerOptions": {
-		"types": ["node"],
-		"incremental": true,
-		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-		"jsx": "react-jsx",
-		"lib": ["ESNext", "DOM", "DOM.Iterable"],
-		"paths": {
-			"@/ui/*": ["./src/*"]
-		},
-		"allowImportingTsExtensions": true,
-		"noEmit": true
-	},
-	"include": ["src"],
-	"exclude": ["node_modules"]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "rootDir": "src",
+    "paths": {
+      "@/ui/*": ["./src/*"]
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node"],
+    "declaration": true,
+    "declarationMap": true,
+    "jsx": "react-jsx",
+    "outDir": "dist"
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
