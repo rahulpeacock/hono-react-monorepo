@@ -1,12 +1,8 @@
 import { configureOpenApi } from '@/api/lib/configure-open-api';
 import createApp from '@/api/lib/create-app';
-import index from '@/api/routes/index';
-import tasks from '@/api/routes/tasks/tasks.base';
+import { registerRoutes } from './lib/register-routes';
 
-const app = createApp();
-
+const app = registerRoutes(createApp());
 configureOpenApi(app);
-
-app.route('/', index).route('/', tasks);
 
 export default app;

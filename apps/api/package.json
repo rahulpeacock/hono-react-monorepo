@@ -12,6 +12,9 @@
     "typecheck": "tsc --noEmit",
     "clean": "git clean -xdf dist node_modules"
   },
+  "exports": {
+    "./routes": "./src/lib/register-routes.ts"
+  },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
     "@hono/zod-openapi": "^0.18.3",
