@@ -10,9 +10,10 @@
     "format": "biome format --write ./src",
     "check": "biome check --write ./src",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf node_modules"
+    "clean": "git clean -xdf dist node_modules"
   },
   "dependencies": {
+    "@kittyo/api": "workspace:^",
     "hono": "^4.6.14"
   },
   "devDependencies": {
