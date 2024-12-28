@@ -7,7 +7,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [tsconfigPaths(), TanStackRouterVite(), react()],
   build: {
-    assetsDir: 'static',
     emptyOutDir: true,
   },
 });
