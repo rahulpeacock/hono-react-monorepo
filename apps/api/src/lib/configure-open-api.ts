@@ -3,7 +3,7 @@ import packageJson from '../../package.json' with { type: 'json' };
 import type { AppOpenApi } from './types';
 
 export function configureOpenApi(app: AppOpenApi) {
-  app.doc('/doc', {
+  app.doc('/api/doc', {
     openapi: '3.0.0',
     info: {
       version: packageJson.version,
@@ -17,7 +17,7 @@ export function configureOpenApi(app: AppOpenApi) {
       theme: 'kepler',
       layout: 'classic',
       spec: {
-        url: '/doc',
+        url: '/api/doc',
       },
       defaultHttpClient: {
         targetKey: 'javascript',
