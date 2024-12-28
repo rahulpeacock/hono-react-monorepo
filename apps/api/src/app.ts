@@ -7,6 +7,6 @@ const app = createApp();
 
 configureOpenApi(app);
 
-app.route('/api', index).route('/api', tasks);
+app.route('/', index).route('/', tasks);
 
 export default app;
