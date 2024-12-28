@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc && tsc-alias",
+    "build": "rm -rf dist && tsc && tsc-alias",
     "start": "node ./dist/src/index.js",
     "format": "biome format --write ./src",
     "lint": "biome lint --write ./src",
