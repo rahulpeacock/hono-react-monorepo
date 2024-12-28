@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@kittyo/ui": "workspace:^",
+    "@kittyo/api-client": "workspace:^",
     "@tanstack/react-query": "^5.62.10",
     "@tanstack/react-router": "^1.92.3",
     "react": "^19.0.0",

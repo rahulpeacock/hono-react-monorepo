@@ -1,5 +1,5 @@
 import type { AppMiddlewareVariables, AppRouteHandler } from '@/api/lib/types';
-import type { CreateTasksRoute } from './tasks.routes';
+import type { CreateTasksRoute, GetTaskRoute } from './tasks.routes';
 
 export const createTasks: AppRouteHandler<
   CreateTasksRoute,
@@ -14,4 +14,10 @@ export const createTasks: AppRouteHandler<
   console.log({ foo, bar });
 
   return c.json({ created: 'created' }, 200);
+};
+
+export const getTask: AppRouteHandler<GetTaskRoute> = (c) => {
+  const { id } = c.req.valid('param');
+
+  return c.json({ id, task: `This is task with id: ${id}` }, 200);
 };

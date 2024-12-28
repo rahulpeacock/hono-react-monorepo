@@ -66,6 +66,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@kittyo/api-client':
+        specifier: workspace:^
+        version: link:../../packages/api-client
       '@kittyo/ui':
         specifier: workspace:^
         version: link:../../packages/ui
