@@ -1,4 +1,5 @@
 import { Button } from '@kittyo/ui/button';
+import { cn } from '@kittyo/ui/utils';
 import { Link, createFileRoute } from '@tanstack/react-router';
 import { apiClient } from '../lib/api-client';
 
@@ -19,7 +20,7 @@ function RouteComponent() {
 
   return (
     <div>
-      <div className='bg-red-200'>
+      <div className={cn('bg-red-200')}>
         <p>Hello form</p>
         <Button asChild>
           <Link to='/about'>About</Link>
