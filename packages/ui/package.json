@@ -13,9 +13,18 @@
     "clean": "git clean -xdf dist node_modules"
   },
   "exports": {
-    "./button": "./src/components/button.tsx",
-    "./hooks": "./src/hooks/index.ts",
-    "./utils": "./src/utils",
+    "./button": {
+      "default": "./dist/components/button.js",
+      "types": "./dist/components/button.d.ts"
+    },
+    "./hooks": {
+      "default": "./dist/hooks/index.js",
+      "types": "./dist/hooks/index.d.ts"
+    },
+    "./utils": {
+      "default": "./dist/utils/index.js",
+      "types": "./dist/utils/index.d.ts"
+    },
     "./globals.css": "./src/globals.css",
     "./postcss": "./postcss.config.js",
     "./tailwind.config": "./tailwind.config.ts"

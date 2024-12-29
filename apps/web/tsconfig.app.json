@@ -6,8 +6,7 @@
     "jsx": "react-jsx",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "paths": {
-      "@/web/*": ["./src/*"],
-      "@/ui/*": ["../../packages/ui/src/*"]
+      "@/web/*": ["./src/*"]
     },
     "allowImportingTsExtensions": true,
     "noEmit": true
