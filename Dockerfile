@@ -8,7 +8,7 @@ RUN corepack enable
 FROM base AS prod-deps
 COPY . /app
 WORKDIR /app
-RUN id=pnpm,target=/pnpm/store pnpm -F @kittyo/api install -P --frozen-lockfile
+RUN pnpm deploy -F @kittyo/api -P /prod/api
 
 
 FROM base AS builder
@@ -24,7 +24,7 @@ WORKDIR /app
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 hono
 
-COPY --from=prod-deps --chown=hono:nodejs /app/apps/api/node_modules /app/node_modules
+COPY --from=prod-deps --chown=hono:nodejs /prod/api/node_modules /app/node_modules
 COPY --from=builder --chown=hono:nodejs /app/apps/api/dist /app/dist
 COPY --from=builder --chown=hono:nodejs /app/apps/api/package.json /app/package.json
 
@@ -34,4 +34,4 @@ USER hono
 EXPOSE 3000
 
 
-CMD ["sleep", "3600"]
+CMD ["node", "/app/dist/src/index.js"]
