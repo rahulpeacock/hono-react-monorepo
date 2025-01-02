@@ -24,11 +24,11 @@ WORKDIR /app
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 hono
 
-COPY --from=prod-deps --chown=hono:nodejs ./apps/api/node_modules /app/node_modules
-COPY --from=builder --chown=hono:nodejs ./apps/api/dist /app/dist
-COPY --from=builder --chown=hono:nodejs ./apps/api/package.json /app/package.json
+COPY --from=prod-deps --chown=hono:nodejs /app/apps/api/node_modules /app/node_modules
+COPY --from=builder --chown=hono:nodejs /app/apps/api/dist /app/dist
+COPY --from=builder --chown=hono:nodejs /app/apps/api/package.json /app/package.json
 
-COPY --from=builder --chown=hono:nodejs ./apps/web/dist ./public
+COPY --from=builder --chown=hono:nodejs /app/apps/web/dist ./public
 
 USER hono
 EXPOSE 3000
