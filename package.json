@@ -15,7 +15,7 @@
     "check": "pnpm run -r --parallel check",
     "typecheck": "pnpm run -r --parallel typecheck",
     "clean": "git clean -xdf node_modules",
-    "clean:workspaces": "pnpm run -r clean",
+    "clean:workspace": "pnpm run -r clean",
     "deploy": "pnpm build && pnpm run -r deploy"
   },
   "devDependencies": {
