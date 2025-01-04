@@ -10,6 +10,7 @@ const envSchema = z.object({
   PORT: z.coerce.number().default(3000),
   SPA_ASSETS_PATH: z.string(),
   SPA_ROOT_DIR: z.string(),
+  DATABASE_URL: z.string(),
 });
 
 let env: z.infer<typeof envSchema>;
